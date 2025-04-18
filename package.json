@@ -1,7 +1,8 @@
 {
   "name": "matkit",
-  "private": true,
   "version": "0.0.0",
+  "description": "Material 3 ui kit",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
