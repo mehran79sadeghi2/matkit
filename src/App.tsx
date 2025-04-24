@@ -1,6 +1,6 @@
 import './App.css'
 import styles from './styles.module.css'
-import Button from './components/Button'
+import Button from './components/NewButton'
 
 function App() {
 

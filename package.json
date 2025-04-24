@@ -1,6 +1,6 @@
 {
   "name": "matkit",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Material 3 ui kit",
   "private": true,
   "type": "module",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
+    "@types/node": "^22.14.1",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
@@ -26,5 +27,30 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.26.1",
     "vite": "^6.3.1"
+  },
+  "main": "./dist/matkit.umd.js",
+  "module": "./dist/matkit.es.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mehran79sadeghi2/matkit.git"
+  },
+  "keywords": [
+    "matkit",
+    "ui-kit"
+  ],
+  "author": {
+    "name": "Mehran",
+    "email": "mehran79sadeghi2@gmail.com",
+    "url": "https://mehran-sadeghi.ir"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/matkit.es.js",
+      "require": "./dist/matkit.umd.js"
+    }
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
